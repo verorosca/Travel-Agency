@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Travel SRL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('./images/wall_image.avif') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .logo {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./images/exclusive_travel_logo.png" alt="Exclusive Travel Logo" class="logo me-2"> Exclusive Travel SRL
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#search">Search</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="display-4 fw-bold">Discover the World with Exclusive Travel</h1>
+    <p class="lead">Your journey begins here</p>
+    <a href="#search" class="btn btn-primary btn-lg mt-3">Find Your Trip</a>
+  </section>
+
+  <!-- Search Engine -->
+  <section id="search" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Search Your Next Adventure</h2>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label class="form-label">Destination</label>
+          <input type="text" class="form-control" placeholder="e.g. Paris">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Departure Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Return Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">Max Price ($)</label>
+          <input type="number" class="form-control" placeholder="1000">
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success btn-lg">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./images/turkey.avif" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Turkey</h5>
+              <p class="card-text">From $799</p>
+              <a href="#" class="btn btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./images/rome.avif" class="card-img-top" alt="Rome" height="70%">
+            <div class="card-body">
+              <h5 class="card-title">Rome</h5>
+              <p class="card-text">From $699</p>
+              <a href="#" class="btn btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./images/greece.avif" class="card-img-top" alt="Greece" height="70%">
+            <div class="card-body">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">From $1499</p>
+              <a href="#" class="btn btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Exclusive Travel SRL</h5>
+          <p>📍 Strada Banulescu-Bodoni 8, Chișinău, Moldova</p>
+          <p>📞 +373 69 319 123</p>
+          <p>✉️ info@exclusivetravel.md</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Exclusive Travel SRL. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
